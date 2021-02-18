@@ -1,0 +1,317 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    width: 320px;
+    min-width: 320px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    background-color: #E9E9E9;
+}
+
+/* Section clock-status mobile */
+
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 40px;
+    background-color: #E9E9E9;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+
+.nav-mobile .clock{
+    width: 25%;
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-mobile .status-mobile {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-mobile .signal{
+    width: 17px;
+    height: 11px;
+}
+
+.nav-mobile .wifi{
+    width: 15px;
+    height: 11px;
+}
+
+.nav-mobile .battery{
+    width: 24px;
+    height: 11px;
+}
+
+/* section nav-main-instagram */
+
+
+header .nav-instagram .title{
+    display: block;
+    text-align: center;
+    width: 320px;
+    height: 31px;
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #E9E9E9;
+}
+
+header .no-fixed {
+    margin-top: 71px;
+}
+
+.section-profile-interacion {
+    display: flex;
+    width: 100%;
+}
+
+header .block-profile{
+    width: 114px;
+    height: 95px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .block-profile .photo{
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+}
+
+header .block-profile .edit-photo{
+    position: 	absolute;
+    bottom: 7%;
+    right: 15%;
+}
+
+header .data-interaction{
+    width: 210px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .data-interaction .post {
+    width: 73px;
+    height: 38px;
+    text-align: center;
+    padding-right: 8px;
+}
+
+header .data-interaction .followers {
+    width: 67px;
+    height: 38px;
+    text-align: center;
+    text-align: 0 7;
+
+}
+
+header .data-interaction .following {
+    width: 119px;
+    height: 38px;
+    line-height: 18px;
+    text-align: center;
+}
+
+header .data-interaction .data-number{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .data-interaction .data-name{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+header .description-profile{
+    width: 100%;
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .description{
+    width: 90%;
+    height: 67%;
+}
+
+header .button-edit{
+    width: 90%;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 1px #DBDBDB solid;
+}
+
+/* main photos*/
+
+main{
+    width: 100%;
+    background-color: #E9E9E9;
+}
+
+main .icons-photos{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 71px;
+    z-index: 1;
+    background-color: #E9E9E9;
+}
+
+main .icons-photos .photos {
+    width: 28px;
+    width: 28px;
+}
+
+main .icons-photos .shared {
+    width: 28px;
+    height: 29px;
+}
+
+main .photos-posted {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+main .block-photo {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+main .photos-posted img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Overlay photos */
+
+main .block-photo .post-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+main .block-photo:hover .post-overlay {
+    display: flex;
+}
+
+.post-likes,
+.post-comments {
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 85px;
+    background-color: #E9E9E9;
+}
+
+footer .block-nav-footer {
+    width: 320px;
+    height: 57px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    z-index: 1;
+    background-color: #E9E9E9;
+}
+
+footer .icon-home, .icon-search, .icon-add, .icon-likes, .icon-profile {
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icon-home img {
+    width: 22px;
+    height: 21px;
+}
+
+footer .icon-search img {
+    width: 20px;
+    height: 21px;
+}
+
+footer .icon-add img {
+    width: 22px;
+    height: 22px;
+}
+
+footer .icon-likes img {
+    width: 22px;
+    height: 20px;
+}
+
+footer .icon-profile img {
+    width: 21px;
+    height: 22px;
+}
